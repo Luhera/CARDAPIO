@@ -1,0 +1,30 @@
+[33mcommit af287f623ef04ccc7739f59028448c089e93acfa[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Anderson Lucena <alucena933@gmail.com>
+Date:   Mon Aug 21 12:42:56 2023 -0300
+
+    aterações realizada apagando fotos e alterando preços
+
+[33mcommit d63ea7f5bd6e8db372871e7751cf87e798b82bd3[m
+Merge: 8bf8f30 1c5a0bc
+Author: Anderson  Lucena <alucena933@gmail.com>
+Date:   Fri Aug 18 14:04:07 2023 -0300
+
+    Merge branch 'main' of https://github.com/Luhera/CARDAPIO
+
+[33mcommit 8bf8f30d5766842820c38c960e0c9580a05c2436[m
+Author: Anderson  Lucena <alucena933@gmail.com>
+Date:   Fri Aug 18 14:02:38 2023 -0300
+
+    Update index.html
+
+[33mcommit 1c5a0bc09e02f65c3d27a66d467a0104a572fef6[m
+Author: Anderson  Henrique Lucena Do Nascismento Heraclio <alucena933@gmail.com>
+Date:   Fri Aug 18 13:37:43 2023 -0300
+
+    Delete sample-inner-page.html
+
+[33mcommit 7a11c9629a1de3d2343b1d7d695cf1423334e2e1[m
+Author: Anderson  Lucena <alucena933@gmail.com>
+Date:   Fri Aug 18 13:31:45 2023 -0300
+
+    Initial commit
