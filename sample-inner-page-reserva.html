@@ -8,6 +8,9 @@
   <title>RESERVA</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <meta name="description" content="PWA-Nonaa">
+  <link rel="manifest" href="manifest.json">
+
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -182,6 +185,24 @@
 
   </footer><!-- End Footer -->
   <!-- End Footer -->
+
+
+  <script>
+    let newWorker;
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js').then(reg => {
+        reg.addEventListener('updatefound', () => {
+          newWorker = reg.installing;
+        });
+      });
+      let refreshing;
+      navigator.serviceWorker.addEventListener('controllerchange', function () {
+        if (refreshing) return;
+        window.location.reload();
+        refreshing = true;
+      });
+    }
+  </script>
 
 
 
