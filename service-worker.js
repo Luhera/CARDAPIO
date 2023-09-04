@@ -74,5 +74,17 @@ self.addEventListener('message', function (event) {
         return caches.match(event.request);
       }
     }());
+
+    //Atualizacao cache
+  event.respondWith(
+    caches.match(event.request)
+      .then(function (response) {
+        if (response) {
+          return response;
+        }
+        return fetch(event.request);
+      })
+  );
+
   });
   
