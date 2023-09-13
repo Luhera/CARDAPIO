@@ -11,6 +11,8 @@ self.addEventListener('install', event => {
         './index.html',
 
         './assets/css/main.css',
+        
+        './assets/js/main.js',
 
         './assets/img/hero-img.png',
         './assets/img/favicon.png',
@@ -43,19 +45,6 @@ self.addEventListener('install', event => {
         './assets/img/menu/janta/menu-item-4.png',
         './assets/img/menu/janta/menu-item-5.png',
         './assets/img/menu/janta/menu-item-6.png',
-
-        './assets/img/icon/144.png',
-        './assets/img/icon/152.png',
-        './assets/img/icon/167.png',
-        './assets/img/icon/180.png',
-        './assets/img/icon/192.png',
-        './assets/img/icon/256.png',
-        './assets/img/icon/512.png',
-
-        './assets/img/reservation.jpg',
-        
-        './assets/js/main.js',
-
       ]))
   );
 });
