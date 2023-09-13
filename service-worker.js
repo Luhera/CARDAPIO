@@ -10,6 +10,12 @@ self.addEventListener('install', event => {
 
         './index.html',
 
+        './sample-inner-page-contatos.html',
+
+        './sample-inner-page-menu.html',
+
+        './sample-inner-page-reserva.html',
+
         './assets/css/main.css',
         
         './assets/js/main.js',
