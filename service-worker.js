@@ -19,38 +19,6 @@ self.addEventListener('install', event => {
         './assets/css/main.css',
         
         './assets/js/main.js',
-
-        './assets/img/hero-img.png',
-        './assets/img/favicon.png',
-        './assets/img/logo.png',
-
-        './assets/img/menu/menu-entradas/menu-item-1.png',
-        './assets/img/menu/menu-entradas/menu-item-2.png',
-        './assets/img/menu/menu-entradas/menu-item-3.png',
-        './assets/img/menu/menu-entradas/menu-item-4.png',
-        './assets/img/menu/menu-entradas/menu-item-5.png',
-        './assets/img/menu/menu-entradas/menu-item-6.png',
-
-        './assets/img/menu/menu-cafe-da-manha/menu-item-1.png',
-        './assets/img/menu/menu-cafe-da-manha/menu-item-2.png',
-        './assets/img/menu/menu-cafe-da-manha/menu-item-3.png',
-        './assets/img/menu/menu-cafe-da-manha/menu-item-4.png',
-        './assets/img/menu/menu-cafe-da-manha/menu-item-5.png',
-        './assets/img/menu/menu-cafe-da-manha/menu-item-6.png',
-
-        './assets/img/menu/menu-almoco/menu-item-1.png',
-        './assets/img/menu/menu-almoco/menu-item-2.png',
-        './assets/img/menu/menu-almoco/menu-item-3.png',
-        './assets/img/menu/menu-almoco/menu-item-4.png',
-        './assets/img/menu/menu-almoco/menu-item-5.png',
-        './assets/img/menu/menu-almoco/menu-item-6.png',
-
-        './assets/img/menu/janta/menu-item-1.png',
-        './assets/img/menu/janta/menu-item-2.png',
-        './assets/img/menu/janta/menu-item-3.png',
-        './assets/img/menu/janta/menu-item-4.png',
-        './assets/img/menu/janta/menu-item-5.png',
-        './assets/img/menu/janta/menu-item-6.png',
       ]))
   );
 });
