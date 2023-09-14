@@ -20,6 +20,13 @@ self.addEventListener('install', event => {
         
         './assets/js/main.js',
 
+        './assets/vendor/bootstrap/js/bootstrap.bundle.min.js',
+        './assets/vendor/aos/aos.js',
+        './assets/vendor/glightbox/js/glightbox.min.js',
+        './assets/vendor/purecounter/purecounter_vanilla.js',
+        './assets/vendor/swiper/swiper-bundle.min.js',
+        './assets/vendor/php-email-form/validate.js',
+
         './assets/img/menu/menu-almoco/menu-item-1.png',
         './assets/img/menu/menu-almoco/menu-item-2.png',
         './assets/img/menu/menu-almoco/menu-item-3.png',
