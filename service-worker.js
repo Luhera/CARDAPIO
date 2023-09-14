@@ -19,6 +19,20 @@ self.addEventListener('install', event => {
         './assets/css/main.css',
         
         './assets/js/main.js',
+
+        './assets/img/menu/menu-almoco/menu-item-1.png',
+        './assets/img/menu/menu-almoco/menu-item-2.png',
+        './assets/img/menu/menu-almoco/menu-item-3.png',
+        './assets/img/menu/menu-almoco/menu-item-4.png',
+        './assets/img/menu/menu-almoco/menu-item-5.png',
+        './assets/img/menu/menu-almoco/menu-item-6.png',
+
+        './assets/img/menu/menu-cafe-da-manha/menu-item-1.png',
+        './assets/img/menu/menu-cafe-da-manha/menu-item-2.png',
+        './assets/img/menu/menu-cafe-da-manha/menu-item-3.png',
+        './assets/img/menu/menu-cafe-da-manha/menu-item-4.png',
+        './assets/img/menu/menu-cafe-da-manha/menu-item-5.png',
+        './assets/img/menu/menu-cafe-da-manha/menu-item-6.png',
       ]))
   );
 });
