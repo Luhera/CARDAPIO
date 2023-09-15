@@ -26,6 +26,8 @@ self.addEventListener('install', event => {
         './assets/vendor/purecounter/purecounter_vanilla.js',
         './assets/vendor/swiper/swiper-bundle.min.js',
         './assets/vendor/php-email-form/validate.js',
+        './assets/vendor/bootstrap-icons/bootstrap-icons.css',
+
 
 
         './assets/img/menu/menu-almoco/menu-item-1.png',
