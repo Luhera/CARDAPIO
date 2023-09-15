@@ -26,7 +26,7 @@ self.addEventListener('install', event => {
         './assets/vendor/purecounter/purecounter_vanilla.js',
         './assets/vendor/swiper/swiper-bundle.min.js',
         './assets/vendor/php-email-form/validate.js',
-        './assets/vendor/bootstrap-icons/bootstrap-icons.css',
+
 
         './assets/img/menu/menu-almoco/menu-item-1.png',
         './assets/img/menu/menu-almoco/menu-item-2.png',
@@ -41,20 +41,6 @@ self.addEventListener('install', event => {
         './assets/img/menu/menu-cafe-da-manha/menu-item-4.png',
         './assets/img/menu/menu-cafe-da-manha/menu-item-5.png',
         './assets/img/menu/menu-cafe-da-manha/menu-item-6.png',
-
-        './assets/img/menu/menu-entradas/menu-item-1.png',
-        './assets/img/menu/menu-entradas/menu-item-2.png',
-        './assets/img/menu/menu-entradas/menu-item-3.png',
-        './assets/img/menu/menu-entradas/menu-item-4.png',
-        './assets/img/menu/menu-entradas/menu-item-5.png',
-        './assets/img/menu/menu-entradas/menu-item-6.png',
-
-        './assets/img/menu/menu-janta/menu-item-1.png',
-        './assets/img/menu/menu-janta/menu-item-2.png',
-        './assets/img/menu/menu-janta/menu-item-3.png',
-        './assets/img/menu/menu-janta/menu-item-4.png',
-        './assets/img/menu/menu-janta/menu-item-5.png',
-        './assets/img/menu/menu-janta/menu-item-6.png',
         
       ]))
   );
