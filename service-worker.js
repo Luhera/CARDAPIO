@@ -28,12 +28,6 @@ self.addEventListener('install', event => {
         './assets/vendor/php-email-form/validate.js',
         './assets/vendor/bootstrap-icons/bootstrap-icons.css',
 
-        '.assets/img/hero-img.png',
-        '.assets/img/reservartion.jpg',
-        '.assets/img/stats-bg.jpg',
-        '.assets/img/about.jpg',
-        '.assets/img/about-2.jpg',
-
         './assets/img/menu/menu-almoco/menu-item-1.png',
         './assets/img/menu/menu-almoco/menu-item-2.png',
         './assets/img/menu/menu-almoco/menu-item-3.png',
