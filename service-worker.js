@@ -16,10 +16,14 @@ self.addEventListener('install', event => {
 
         './sample-inner-page-reserva.html',
 
+        './sample-inner-page-receita.html',
+
         './assets/css/main.css',
         
         './assets/js/main.js',
 
+        './assets/js/js.js',
+        
         './assets/vendor/bootstrap/js/bootstrap.bundle.min.js',
         './assets/vendor/aos/aos.js',
         './assets/vendor/glightbox/js/glightbox.min.js',

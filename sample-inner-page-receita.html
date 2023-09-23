@@ -62,6 +62,27 @@
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
     </div>
+
+    <!-- manifest e service-worker -->
+  <meta name="description" content="PWA-Nonaa">
+  <link rel="manifest" href="manifest.json">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="msapplication-TileImage" content="assets/img/icon/144.png">
+  <meta name="msapplication-TileColor" content="#31506F">
+  <meta name="theme-color" content="#4D5360" />
+  <link rel="shortcut icon" sizes="192x192" href="assets/img/icon/192.png">
+  <link rel="shortcut icon" sizes="128x128" href="assets/img/icon/128.png">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="PWA-Nonaa">
+  <link rel="apple-touch-icon" href="assets/img/icon/144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/icon/152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/180.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="assets/img/icon/167.png">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="icon" type="image/png" href="assets/img/icon/144.png">
   </header><!-- End Header -->
 
   <main id="main">
@@ -71,13 +92,13 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2>Aqui voce encontrar as receitas do cardapido da nonna gastro</h2>
+          <h2>Aqui voce vai encontrar as receitas do cardapido da nonna gastro</h2>
         </div>
 
       </div>
     </div><!-- End Breadcrumbs -->
 
-    <section class="sample-page">
+    <section class="sample-inner-page">
       <div class="container" data-aos="fade-up">
         
         <div class="container">
@@ -87,7 +108,7 @@
               <form>
                 <input id="namereceita" class="form-control" type="text" placeholder="Digite a receita que voce que ">
                 <br />
-                <a class="btn btn-primary" onclick="searchMovies(document.getElementById('namereceita').value)">Buscar</a>
+                <a class="btn btn-primary" onclick="obterReceita(document.getElementById('namereceita').value)">Buscar</a>
               </form>
     
             </div>
@@ -99,37 +120,37 @@
      
           <thead>
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">Foto</th>
-              <th scope="col">Nome</th>
-              <th scope="col">Link</th>
+              <th scope="col-3">#</th>
+              <th scope="col-3">Foto</th>
+              <th scope="col-3">Nome</th>
+              <th scope="col-3">Link</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
+              <td > <img id="img1"></td>
+              <td id="nome1"></td>
+              <td> <a id="link1" class="btn btn-primary" >ir para receita</a></td>
             </tr>
             <tr>
               <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
+              <td ><img id="img2"></td>
+              <td id="nome2"></td>
+              <td > <a id="link2"  class="btn btn-primary" >ir para receita</a></td>
             </tr>
             <tr>
               <th scope="row">3</th>
-              <td>Larry</td>
-              <td>the Bird</td>
-              <td>@twitter</td>
+              <td ><img id="img3"></td>
+              <td id="nome3"></td>
+              <td > <a id="link3" class="btn btn-primary">ir para receita</a></td>
             </tr>
           </tbody>
         </table>
 
       </div>
     </section>
-
+    <div id="preloader"></div>
   </main><!-- End #main -->
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -141,6 +162,25 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/js.js"></script>
+
+  <script>
+    let newWorker;
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js').then(reg => {
+        reg.addEventListener('updatefound', () => {
+          newWorker = reg.installing;
+        });
+      });
+      let refreshing;
+      navigator.serviceWorker.addEventListener('controllerchange', function () {
+        if (refreshing) return;
+        window.location.reload();
+        refreshing = true;
+      });
+    }
+  </script>
 
 </body>
 
